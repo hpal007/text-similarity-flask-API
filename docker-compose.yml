@@ -1,0 +1,10 @@
+version: '3'
+services: 
+  web:
+    build: './web'
+    ports: 
+    - '2000:9000'
+    links: 
+    - db
+  db:
+    build: './db'
